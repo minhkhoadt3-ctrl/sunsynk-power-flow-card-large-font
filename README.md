@@ -28,7 +28,7 @@ The existing `large_font` option, entity handling, inverter integrations, layout
 
 ### Manual installation
 
-Copy `sunsynk-power-flow-card.js` to `/config/www/`, then add it as a JavaScript module resource in Home Assistant.
+After the build workflow succeeds, copy `dist/sunsynk-power-flow-card.js` to `/config/www/`, then add it as a JavaScript module resource in Home Assistant.
 
 ## Upstream project and license
 
@@ -117,7 +117,7 @@ The card can be installed via HACS (recommended) or manually.
 ### Manual Installation
 
 1. Create a new directory under `www` and name it `sunsynk-power-flow-card` e.g `www/sunsynk-power-flow-card/`.
-2. Copy the `sunsynk-power-flow-card.js` into the directory.
+2. Copy `dist/sunsynk-power-flow-card.js` into the directory.
 3. Add the resource to your Dashboard. You can append the filename with a `?ver=x` and increment x each time you download a new version to force a reload and avoid using a cached version. It is also a good idea to clear your browser cache.
 
 ![image](https://user-images.githubusercontent.com/7227275/235441241-93ab0c7d-341d-428f-8ca8-60ec932dde2d.png)
