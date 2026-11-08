@@ -19,12 +19,12 @@ The existing `large_font` option, entity handling, inverter integrations, layout
 
 ### HACS (custom repository)
 
-1. Publish this folder as a new GitHub repository named `sunsynk-power-flow-card-large-font` under your GitHub account.
+1. Add this repository as a HACS custom repository.
 2. In Home Assistant, open **HACS → Integrations → ⋮ → Custom repositories**.
-3. Add `https://github.com/YOUR_GITHUB_USERNAME/sunsynk-power-flow-card-large-font` and choose **Dashboard** as the category.
+3. Add `https://github.com/minhkhoadt3-ctrl/sunsynk-power-flow-card-large-font` and choose **Dashboard** as the category.
 4. Install **Sunsynk Power Flow Card – Large Font**.
 
-Replace `YOUR_GITHUB_USERNAME` with your GitHub username after creating the repository.
+
 
 ### Manual installation
 
@@ -110,7 +110,7 @@ The card can be installed via HACS (recommended) or manually.
 
 1. Install HACS.
 2. Open HACS → Integrations → ⋮ → Custom repositories.
-3. Add `https://github.com/YOUR_GITHUB_USERNAME/sunsynk-power-flow-card-large-font` and select category **Dashboard**.
+3. Add `https://github.com/minhkhoadt3-ctrl/sunsynk-power-flow-card-large-font` and select category **Dashboard**.
 4. Find **Sunsynk Power Flow Card – Large Font** and install it.
 
 
