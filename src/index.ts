@@ -3158,6 +3158,7 @@ export class SunsynkPowerFlowCard extends LitElement {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
+(window as any).customCards = (window as any).customCards || [];
 (window as any).customCards.push({
 	type: 'sunsynk-power-flow-card',
 	name: 'Sunsynk Power Flow Card',
