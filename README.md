@@ -1,10 +1,12 @@
 # Sunsynk Power Flow Card – Large Font
 
-This is a community customization of the upstream [Sunsynk Power Flow Card](https://github.com/slipx06/sunsynk-power-flow-card).
+> **A separate community fork** with larger text throughout the Home Assistant card.
+>
+> **Original upstream project:** [slipx06/sunsynk-power-flow-card](https://github.com/slipx06/sunsynk-power-flow-card). This fork is based on that project; please visit the original repository for upstream development, issue history, and original documentation.
 
-## Large-font changes
+## What this fork changes
 
-This build increases the SVG text sizes throughout both Lite/compact and Full layouts:
+This build increases SVG text sizes throughout both Lite/compact and Full layouts:
 - Small labels and secondary text: 9px → 11px; 12px → 15px
 - Standard text: 14px → 18px
 - Larger values: 16px → 20px
@@ -13,15 +15,26 @@ This build increases the SVG text sizes throughout both Lite/compact and Full la
 
 The existing `large_font` option, entity handling, inverter integrations, layout logic, colours, icons, and power-flow animations are otherwise retained. Explicit `title_size` values continue to be respected.
 
-## Installation
+## Install this fork
 
-For a personal HACS fork, publish this repository to your own GitHub account, then add your repository URL in HACS → Integrations → Custom repositories (category: Dashboard). Install/update the card and add the resource if HACS does not do so automatically.
+### HACS (custom repository)
 
-Manual installation: copy `sunsynk-power-flow-card.js` to `/config/www/`, then add it as a JavaScript module resource in Home Assistant.
+1. Publish this folder as a new GitHub repository named `sunsynk-power-flow-card-large-font` under your GitHub account.
+2. In Home Assistant, open **HACS → Integrations → ⋮ → Custom repositories**.
+3. Add `https://github.com/YOUR_GITHUB_USERNAME/sunsynk-power-flow-card-large-font` and choose **Dashboard** as the category.
+4. Install **Sunsynk Power Flow Card – Large Font**.
 
-## Upstream and license
+Replace `YOUR_GITHUB_USERNAME` with your GitHub username after creating the repository.
 
-Based on the upstream project by slipx06. The upstream MIT license is retained in `LICENSE`; see it for copyright and redistribution terms.
+### Manual installation
+
+Copy `sunsynk-power-flow-card.js` to `/config/www/`, then add it as a JavaScript module resource in Home Assistant.
+
+## Upstream project and license
+
+- Original repository: https://github.com/slipx06/sunsynk-power-flow-card
+- Original documentation: https://slipx06.github.io/sunsynk-power-flow-card/index.html
+- The upstream MIT license is retained in [`LICENSE`](LICENSE). See it for copyright and redistribution terms.
 
 ---
 
@@ -29,7 +42,6 @@ Based on the upstream project by slipx06. The upstream MIT license is retained i
 
 An animated Home Assistant card to emulate the power flow that's shown on the Sunsynk Inverter screen. You can use this to display data from many inverters e.g. Sunsynk, Deye, Solis, Lux, FoxESS, Goodwe, Huawei etc as long as you have the required sensor data. See the [wiki](https://github.com/slipx06/sunsynk-power-flow-card/wiki) for integration methods and examples.
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=slipx06&repository=sunsynk-power-flow-card&category=plugin)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/slipx06/sunsynk-power-flow-card?style=for-the-badge)
 [![Community Forum](https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge)](https://community.home-assistant.io/t/sunsynk-deye-inverter-power-flow-card/562933/1)
 <a href="https://www.buymeacoffee.com/slipx" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="28" width="120"></a>
@@ -95,12 +107,12 @@ The card can be installed via HACS (recommended) or manually.
 
 ### Installation using HACS
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-blue.svg)](https://github.com/custom-components/hacs)
 
 1. Install HACS.
-2. Search & Install sunsynk-power-flow-card or click the button below.
+2. Open HACS → Integrations → ⋮ → Custom repositories.
+3. Add `https://github.com/YOUR_GITHUB_USERNAME/sunsynk-power-flow-card-large-font` and select category **Dashboard**.
+4. Find **Sunsynk Power Flow Card – Large Font** and install it.
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=slipx06&repository=sunsynk-power-flow-card&category=plugin)
 
 ### Manual Installation
 

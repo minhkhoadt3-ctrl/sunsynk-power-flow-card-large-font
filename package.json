@@ -1,7 +1,7 @@
 {
-  "name": "sunsynk-power-flow-card",
+  "name": "sunsynk-power-flow-card-large-font",
   "version": "7.5.9-large-font",
-  "description": "A customizable Home Assistant card to emulate the Sunsynk System flow that's displayed on the Inverter screen.",
+  "description": "A community fork of Sunsynk Power Flow Card with larger text throughout the Home Assistant card.",
   "main": "sunsynk-power-flow-card.js",
   "prettier": {
     "singleQuote": true,
@@ -24,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slipx06/sunsynk-power-flow-card.git"
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/sunsynk-power-flow-card-large-font.git"
   },
   "author": "slipx06 <slipx06@users.noreply.github.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/slipx06/sunsynk-power-flow-card/issues"
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/sunsynk-power-flow-card-large-font/issues"
   },
-  "homepage": "https://github.com/slipx06/sunsynk-power-flow-card#readme",
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/sunsynk-power-flow-card-large-font#readme",
   "dependencies": {
     "@lit-labs/scoped-registry-mixin": "^1.0.3",
     "custom-card-helpers": "^1.9.0",
