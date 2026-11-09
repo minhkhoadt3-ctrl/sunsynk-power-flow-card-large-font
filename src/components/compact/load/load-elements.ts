@@ -102,7 +102,7 @@ export const renderLoadElements = (
 				${createTextWithPopup(
 					'ess_load1_extra',
 					448,
-					157,
+					112,
 					!!config.entities?.essential_load1_extra &&
 						[1, 2, 3].includes(additionalLoad) &&
 						data.stateEssentialLoad1Extra.isValid(),
@@ -162,7 +162,7 @@ export const renderLoadElements = (
 				${createTextWithPopup(
 					'ess_load2_extra',
 					448,
-					282,
+					350,
 					!!config.entities?.essential_load2_extra &&
 						additionalLoad === 2 &&
 						data.stateEssentialLoad2Extra.isValid(),
@@ -660,7 +660,7 @@ export const renderLoadElements = (
 			</svg>
 			${renderText(
 				'daily_load',
-				[2, 3, 4, 5, 6].includes(additionalLoad) ? '365' : '412',
+				[2, 3, 4, 5, 6].includes(additionalLoad) ? '340' : '387',
 				[2, 3, 4, 5, 6].includes(additionalLoad) ? '189' : '282.1',
 				!data.loadShowDaily,
 				'st3 left-align',
@@ -892,7 +892,7 @@ export const renderLoadElements = (
 			</a>
 			${createTextWithPopup(
 				'daily_load_value',
-				[2, 3, 4, 5, 6].includes(additionalLoad) ? '365' : '412',
+				[2, 3, 4, 5, 6].includes(additionalLoad) ? '340' : '387',
 				[2, 3, 4, 5, 6].includes(additionalLoad) ? '175' : '267.9',
 				!data.loadShowDaily || !data.stateDayLoadEnergy.isValid(),
 				'st10 left-align',
