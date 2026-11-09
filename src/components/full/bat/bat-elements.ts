@@ -431,7 +431,7 @@ export const renderBatteryElements = (
 						isFloating
 						? 'transparent'
 						: batteryColour,
-					`${localize('common.to')} ${data.batteryCapacity}% ${localize('common.charge')} @${data.formattedResultTime}`,
+					`${localize('common.charge')} ${data.batteryCapacity}% ${localize('common.at')} ${data.formattedResultTime}`,
 				)}
 				${renderText(
 					'floating',
@@ -538,7 +538,7 @@ export const renderBatteryElements = (
 					132,
 					352,
 					true,
-					`${largeFont !== true ? 'st14' : 'st4'} left-align`,
+					'st3 left-align',
 					data.batteryEnergy === 0 || isFloating || batteryPower === 0
 						? 'transparent'
 						: batteryColour,
@@ -581,7 +581,7 @@ export const renderBatteryElements = (
 						isFloating
 						? 'transparent'
 						: batteryColour,
-					`${localize('common.to')} ${data.batteryCapacity}% ${localize('common.charge')} @${data.formattedResultTime}`,
+					`${localize('common.charge')} ${data.batteryCapacity}% ${localize('common.at')} ${data.formattedResultTime}`,
 				)}
 				${renderText(
 					'floating',
@@ -730,7 +730,7 @@ export const renderBatteryElements = (
 						isFloating2
 						? 'transparent'
 						: battery2Colour,
-					`${localize('common.to')} ${data.battery2Capacity}% ${localize('common.charge')} @${data.formattedResultTime2}`,
+					`${localize('common.charge')} ${data.battery2Capacity}% ${localize('common.at')} ${data.formattedResultTime2}`,
 				)}
 				${renderText(
 					'floating',
@@ -843,7 +843,7 @@ export const renderBatteryElements = (
 					132,
 					352,
 					true,
-					`${largeFont !== true ? 'st14' : 'st4'} left-align`,
+					'st3 left-align',
 					data.battery2Energy === 0 || isFloating2 || battery2Power === 0
 						? 'transparent'
 						: battery2Colour,
