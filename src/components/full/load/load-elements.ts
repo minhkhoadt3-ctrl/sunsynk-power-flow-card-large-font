@@ -814,7 +814,7 @@ export const renderLoadElements = (
 			)}
 			${createTextWithPopup(
 				'daily_load_value',
-				additionalLoad === 0 ? 377 : 238,
+				additionalLoad === 0 ? 352 : 215,
 				additionalLoad === 0 ? 57 : 80,
 				!data.loadShowDaily || showAux || !data.stateDayLoadEnergy.isValid(),
 				'st10 left-align',
