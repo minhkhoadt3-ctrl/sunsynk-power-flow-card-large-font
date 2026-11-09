@@ -253,7 +253,7 @@ export const renderGridElements = (
 					!config.entities?.max_sell_power,
 				'st3 left-align',
 				['off', '0'].includes(data.stateSolarSell.state) ? 'grey' : gridColour,
-				`${localize('common.limit')}: ${data.stateMaxSellPower.toPowerString(auto_scale, decimalPlaces)}`,
+				`${localize('common.limit')}: ${data.stateMaxSellPower.toPowerString(false, decimalPlaces)}`,
 				(e) => Utils.handlePopup(e, config.entities.max_sell_power),
 				true,
 			)}
