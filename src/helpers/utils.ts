@@ -78,18 +78,10 @@ export class Utils {
 		});
 	}
 
-	static convertValue(value, decimal = 2) {
-		decimal = Number.isNaN(decimal) ? 2 : decimal;
-		if (Math.abs(value) >= 1000000) {
-			const scaled = value / 1000000;
-			return `${Utils.formatNumberLocale(scaled, decimal)} MW`;
-		} else if (Math.abs(value) >= 1000) {
-			const scaled = value / 1000;
-			return `${Utils.formatNumberLocale(scaled, decimal)} kW`;
-		} else {
-			const rounded = Math.round(value);
-			return `${rounded.toLocaleString(undefined)} W`;
-		}
+	static convertValue(value, _decimal = 2) {
+		// Instantaneous power is always displayed in watts; never auto-scale to kW/MW.
+		const watts = Math.round(Number(value) || 0);
+		return `${watts.toLocaleString(undefined)} W`;
 	}
 
 	static convertValueNew(
@@ -101,6 +93,16 @@ export class Utils {
 		const numberValue = Number(value);
 		if (isNaN(numberValue)) return 0;
 
+		// Keep instantaneous power values in W even when the source sensor uses kW or MW.
+		if (unit === UnitOfPower.WATT) {
+			return `${Math.round(numberValue).toLocaleString(undefined)} W`;
+		}
+		if (unit === UnitOfPower.KILO_WATT) {
+			return `${Math.round(numberValue * 1000).toLocaleString(undefined)} W`;
+		}
+		if (unit === UnitOfPower.MEGA_WATT) {
+			return `${Math.round(numberValue * 1000000).toLocaleString(undefined)} W`;
+		}
 		const rules = unitOfEnergyConversionRules[unit];
 		if (!rules)
 			return `${Utils.formatNumberLocale(numberValue, decimal)} ${unit}`;
