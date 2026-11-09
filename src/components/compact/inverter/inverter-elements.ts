@@ -376,7 +376,7 @@ export const renderInverterElements = (
 			${createTextWithPopup(
 				'ac_temp',
 				173,
-				168.2,
+				150,
 				!!(
 					config.entities?.radiator_temp_91 && data.stateRadiatorTemp.isValid()
 				),
@@ -388,7 +388,7 @@ export const renderInverterElements = (
 			${createTextWithPopup(
 				'dc_temp',
 				173,
-				180.4,
+				164,
 				!!(
 					config.entities?.dc_transformer_temp_90 &&
 					data.stateDCTransformerTemp.isValid()
