@@ -552,7 +552,7 @@ export const renderBatteryElements = (
 							isFloating
 							? 'transparent'
 							: batteryColour,
-						`${localize('common.runtime_to')} ${data.batteryCapacity}% @${data.formattedResultTime}`,
+						`${localize('common.runtime_to')} ${data.batteryCapacity}% ${localize('common.at')} ${data.formattedResultTime}`,
 						true,
 					)}
 					${renderText(
@@ -712,7 +712,7 @@ export const renderBatteryElements = (
 							isFloating
 							? 'transparent'
 							: batteryColour,
-						`${localize('common.runtime_to')} ${data.batteryCapacity}% @${data.formattedResultTime}`,
+						`${localize('common.runtime_to')} ${data.batteryCapacity}% ${localize('common.at')} ${data.formattedResultTime}`,
 					)}
 					${renderText(
 						'duration_text_charging',
@@ -1026,7 +1026,7 @@ export const renderBatteryElements = (
 							isFloating
 							? 'transparent'
 							: batteryColour,
-						`${localize('common.runtime_to')} ${data.batteryCapacity}% @${data.formattedResultTime}`,
+						`${localize('common.runtime_to')} ${data.batteryCapacity}% ${localize('common.at')} ${data.formattedResultTime}`,
 						true,
 					)}
 					${renderText(
