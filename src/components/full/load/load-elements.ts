@@ -831,7 +831,7 @@ export const renderLoadElements = (
 					additionalLoad === 1 &&
 					!showAux &&
 					data.stateEssentialLoad1Extra.isValid(),
-				'st3',
+				'st10',
 				dynamicColourEssentialLoad1,
 				`${Utils.formatNumberLocale(
 					data.stateEssentialLoad1Extra.toNum(1),
@@ -847,7 +847,7 @@ export const renderLoadElements = (
 					additionalLoad === 1 &&
 					showAux &&
 					data.stateEssentialLoad1Extra.isValid(),
-				'st3 st8',
+				'st10',
 				dynamicColourEssentialLoad1,
 				`${Utils.formatNumberLocale(
 					data.stateEssentialLoad1Extra.toNum(1),
@@ -863,7 +863,7 @@ export const renderLoadElements = (
 					[2, 4, 5, 6].includes(additionalLoad) &&
 					!showAux &&
 					data.stateEssentialLoad1Extra.isValid(),
-				'st3',
+				'st10',
 				dynamicColourEssentialLoad1,
 				`${Utils.formatNumberLocale(
 					data.stateEssentialLoad1Extra.toNum(1),
@@ -879,7 +879,7 @@ export const renderLoadElements = (
 					[2, 4, 5, 6].includes(additionalLoad) &&
 					!showAux &&
 					data.stateEssentialLoad2Extra.isValid(),
-				'st3',
+				'st10',
 				dynamicColourEssentialLoad2,
 				`${Utils.formatNumberLocale(
 					data.stateEssentialLoad2Extra.toNum(1),
