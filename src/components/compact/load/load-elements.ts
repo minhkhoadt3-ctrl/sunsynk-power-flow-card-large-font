@@ -106,7 +106,7 @@ export const renderLoadElements = (
 					!!config.entities?.essential_load1_extra &&
 						[1, 2, 3].includes(additionalLoad) &&
 						data.stateEssentialLoad1Extra.isValid(),
-					'st3',
+					'st10',
 					dynamicColourEssentialLoad1,
 					`${Utils.formatNumberLocale(
 						data.stateEssentialLoad1Extra.toNum(1),
@@ -166,7 +166,7 @@ export const renderLoadElements = (
 					!!config.entities?.essential_load2_extra &&
 						additionalLoad === 2 &&
 						data.stateEssentialLoad2Extra.isValid(),
-					'st3',
+					'st10',
 					dynamicColourEssentialLoad2,
 					`${Utils.formatNumberLocale(
 						data.stateEssentialLoad2Extra.toNum(1),
@@ -254,7 +254,7 @@ export const renderLoadElements = (
 					!!config.entities?.essential_load2_extra &&
 						additionalLoad === 3 &&
 						data.stateEssentialLoad2Extra.isValid(),
-					'st3',
+					'st10',
 					dynamicColourEssentialLoad2,
 					`${Utils.formatNumberLocale(
 						data.stateEssentialLoad2Extra.toNum(1),
@@ -430,7 +430,7 @@ export const renderLoadElements = (
 					!!config.entities?.essential_load1_extra &&
 						additionalLoad >= 4 &&
 						data.stateEssentialLoad1Extra.isValid(),
-					'st3',
+					'st10',
 					dynamicColourEssentialLoad1,
 					`${Utils.formatNumberLocale(
 						data.stateEssentialLoad1Extra.toNum(1),
@@ -445,7 +445,7 @@ export const renderLoadElements = (
 					!!config.entities?.essential_load2_extra &&
 						additionalLoad >= 4 &&
 						data.stateEssentialLoad2Extra.isValid(),
-					'st3',
+					'st10',
 					dynamicColourEssentialLoad2,
 					`${Utils.formatNumberLocale(
 						data.stateEssentialLoad2Extra.toNum(1),
