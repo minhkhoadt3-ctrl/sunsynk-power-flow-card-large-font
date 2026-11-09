@@ -858,7 +858,7 @@ export const renderLoadElements = (
 			${createTextWithPopup(
 				'ess_load1_value_extra',
 				408,
-				70,
+				27,
 				!!config.entities?.essential_load1_extra &&
 					[2, 4, 5, 6].includes(additionalLoad) &&
 					!showAux &&
