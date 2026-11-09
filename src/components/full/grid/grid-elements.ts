@@ -786,7 +786,7 @@ export const renderGridElements = (
 													),
 													'st3 right-align',
 													gridColour,
-													`${Utils.formatNumberLocale(data.energyCost, 2)} ${data.stateEnergyCostBuy?.getUOM()}`,
+													`${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostBuy?.getUOM()}`,
 												)}
                         ${renderText(
 													'energy_cost',
@@ -799,7 +799,7 @@ export const renderGridElements = (
 													),
 													three_phase ? 'st3 right-align' : 'st3 left-align',
 													gridColour,
-													`${Utils.formatNumberLocale(data.energyCost, 2)}`,
+													`${Utils.formatNumberLocale(data.energyCost, 0)}`,
 												)}
                         ${renderText(
 													'energy_cost',
@@ -828,7 +828,7 @@ export const renderGridElements = (
 													),
 													'st3 right-align',
 													gridColour,
-													`${Utils.formatNumberLocale(data.energyCost, 2)} ${data.stateEnergyCostSell?.getUOM()}`,
+													`${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostSell?.getUOM()}`,
 												)}
                         ${renderText(
 													'energy_cost',
@@ -841,7 +841,7 @@ export const renderGridElements = (
 													),
 													three_phase ? 'st3 right-align' : 'st3 left-align',
 													gridColour,
-													`${Utils.formatNumberLocale(data.energyCost, 2)}`,
+													`${Utils.formatNumberLocale(data.energyCost, 0)}`,
 												)}
                         ${renderText(
 													'energy_cost',
