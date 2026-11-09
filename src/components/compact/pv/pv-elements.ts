@@ -488,8 +488,8 @@ export const renderSolarElements = (
 				'st3 left-align',
 				solarColour,
 				`${Utils.formatNumberLocale(
-					data.statePV1Voltage.toNum(1),
-					1,
+					data.statePV1Voltage.toNum(0),
+					0,
 				)} ${UnitOfElectricPotential.VOLT}`,
 				(e) => Utils.handlePopup(e, config.entities.pv1_voltage_109),
 				true,
