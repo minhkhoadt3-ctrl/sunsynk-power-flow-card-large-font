@@ -426,7 +426,7 @@ export const renderLoadElements = (
 				${createTextWithPopup(
 					'ess_load1_extra',
 					438,
-					147,
+					125,
 					!!config.entities?.essential_load1_extra &&
 						additionalLoad >= 4 &&
 						data.stateEssentialLoad1Extra.isValid(),
@@ -441,7 +441,7 @@ export const renderLoadElements = (
 				${createTextWithPopup(
 					'ess_load2_extra',
 					444,
-					147,
+					175,
 					!!config.entities?.essential_load2_extra &&
 						additionalLoad >= 4 &&
 						data.stateEssentialLoad2Extra.isValid(),
