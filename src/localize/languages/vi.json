@@ -30,6 +30,7 @@
     "sustain": "Duy trì",
     "externalcontrol": "Điều khiển ngoài",
     "recharge": "Sạc lại",
-    "scheduledrecharge": "Sạc theo lịch"
+    "scheduledrecharge": "Sạc theo lịch",
+    "at": "lúc"
   }
 }
