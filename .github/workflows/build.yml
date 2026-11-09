@@ -16,6 +16,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: build-card-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -44,5 +48,6 @@ jobs:
           git add dist/sunsynk-power-flow-card.js
           if ! git diff --cached --quiet; then
             git commit -m "Build large-font card"
+            git pull --rebase origin main
             git push
           fi
