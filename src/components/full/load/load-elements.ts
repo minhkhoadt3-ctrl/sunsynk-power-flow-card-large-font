@@ -124,7 +124,7 @@ export const renderLoadElements = (
 					[5, 6].includes(additionalLoad) && data.stateEssentialLoad5.isValid(),
 					'st3',
 					dynamicColourEssentialLoad5,
-					data.stateEssentialLoad5.toPowerString(auto_scale, decimalPlaces),
+					data.stateEssentialLoad5.toPowerString(false, decimalPlaces),
 					(e) => Utils.handlePopup(e, config.entities.essential_load5),
 				)}
 			</svg>
@@ -192,7 +192,7 @@ export const renderLoadElements = (
 					[5, 6].includes(additionalLoad) && data.stateEssentialLoad6.isValid(),
 					'st3',
 					dynamicColourEssentialLoad6,
-					data.stateEssentialLoad6.toPowerString(auto_scale, decimalPlaces),
+					data.stateEssentialLoad6.toPowerString(false, decimalPlaces),
 					(e) => Utils.handlePopup(e, config.entities.essential_load6),
 				)}
 			</svg>
@@ -924,7 +924,7 @@ export const renderLoadElements = (
 				additionalLoad === 1 && data.stateEssentialLoad1.isValid(),
 				`${largeFont !== true ? 'st14' : 'st4'} st8`,
 				dynamicColourEssentialLoad1,
-				data.stateEssentialLoad1.toPowerString(auto_scale, decimalPlaces),
+				data.stateEssentialLoad1.toPowerString(false, decimalPlaces),
 				(e) => Utils.handlePopup(e, config.entities.essential_load1),
 			)}
 			${createTextWithPopup(
@@ -935,7 +935,7 @@ export const renderLoadElements = (
 					data.stateEssentialLoad2.isValid(),
 				'st3',
 				dynamicColourEssentialLoad1,
-				data.stateEssentialLoad1.toPowerString(auto_scale, decimalPlaces),
+				data.stateEssentialLoad1.toPowerString(false, decimalPlaces),
 				(e) => Utils.handlePopup(e, config.entities.essential_load1),
 			)}
 			${createTextWithPopup(
@@ -946,7 +946,7 @@ export const renderLoadElements = (
 					data.stateEssentialLoad2.isValid(),
 				'st3',
 				dynamicColourEssentialLoad2,
-				data.stateEssentialLoad2.toPowerString(auto_scale, decimalPlaces),
+				data.stateEssentialLoad2.toPowerString(false, decimalPlaces),
 				(e) => Utils.handlePopup(e, config.entities.essential_load2),
 			)}
 			${createTextWithPopup(
@@ -957,7 +957,7 @@ export const renderLoadElements = (
 					data.stateEssentialLoad3.isValid(),
 				'st3',
 				dynamicColourEssentialLoad3,
-				data.stateEssentialLoad3.toPowerString(auto_scale, decimalPlaces),
+				data.stateEssentialLoad3.toPowerString(false, decimalPlaces),
 				(e) => Utils.handlePopup(e, config.entities.essential_load3),
 			)}
 			${createTextWithPopup(
@@ -968,7 +968,7 @@ export const renderLoadElements = (
 					data.stateEssentialLoad4.isValid(),
 				'st3',
 				dynamicColourEssentialLoad4,
-				data.stateEssentialLoad4.toPowerString(auto_scale, decimalPlaces),
+				data.stateEssentialLoad4.toPowerString(false, decimalPlaces),
 				(e) => Utils.handlePopup(e, config.entities.essential_load4),
 			)}
 		</svg>
