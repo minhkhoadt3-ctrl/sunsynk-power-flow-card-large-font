@@ -688,7 +688,7 @@ export const renderBatteryElements = (
 					258,
 					352,
 					true,
-					`${largeFont !== true ? 'st14' : 'st4'} right-align`,
+					'st3 right-align',
 					data.batteryEnergy === 0 || isFloating || batteryPower === 0
 						? 'transparent'
 						: batteryColour,
