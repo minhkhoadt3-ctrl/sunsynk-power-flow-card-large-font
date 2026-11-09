@@ -144,7 +144,7 @@ export const renderGridElements = (
 						!data.stateNonessentialLoad3.isValid(),
 					config.battery.hide_soc || config.wide ? 'st3' : 'st12',
 					data.dynamicColourNonEssentialLoad3,
-					data.stateNonessentialLoad3.toPowerString(auto_scale, decimalPlaces),
+					data.stateNonessentialLoad3.toPowerString(false, decimalPlaces),
 					(e) => Utils.handlePopup(e, config.entities.non_essential_load3),
 					true,
 				)}
@@ -645,7 +645,7 @@ export const renderGridElements = (
 				!data.stateMaxSellPower.isValid || !config.entities?.max_sell_power,
 				'st3 left-align',
 				['off', '0'].includes(data.stateSolarSell.state) ? 'grey' : gridColour,
-				`${localize('common.limit')}: ${data.stateMaxSellPower.toPowerString(auto_scale, decimalPlaces)}`,
+				`${localize('common.limit')}: ${data.stateMaxSellPower.toPowerString(false, decimalPlaces)}`,
 				(e) => Utils.handlePopup(e, config.entities.max_sell_power),
 				true,
 			)}
@@ -990,7 +990,7 @@ export const renderGridElements = (
 					!data.stateNonessentialLoad1.isValid(),
 				'st3',
 				data.dynamicColourNonEssentialLoad1,
-				data.stateNonessentialLoad1.toPowerString(auto_scale, decimalPlaces),
+				data.stateNonessentialLoad1.toPowerString(false, decimalPlaces),
 				(e) => Utils.handlePopup(e, config.entities.non_essential_load1),
 				true,
 			)}
@@ -1003,7 +1003,7 @@ export const renderGridElements = (
 					!data.stateNonessentialLoad1.isValid(),
 				'st3',
 				data.dynamicColourNonEssentialLoad1,
-				data.stateNonessentialLoad1.toPowerString(auto_scale, decimalPlaces),
+				data.stateNonessentialLoad1.toPowerString(false, decimalPlaces),
 				(e) => Utils.handlePopup(e, config.entities.non_essential_load1),
 				true,
 			)}
@@ -1016,7 +1016,7 @@ export const renderGridElements = (
 					!data.stateNonessentialLoad2.isValid(),
 				'st3',
 				data.dynamicColourNonEssentialLoad2,
-				data.stateNonessentialLoad2.toPowerString(auto_scale, decimalPlaces),
+				data.stateNonessentialLoad2.toPowerString(false, decimalPlaces),
 				(e) => Utils.handlePopup(e, config.entities.non_essential_load2),
 				true,
 			)}
