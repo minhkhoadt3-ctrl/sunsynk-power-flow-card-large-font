@@ -831,7 +831,7 @@ export const renderLoadElements = (
 					additionalLoad === 1 &&
 					!showAux &&
 					data.stateEssentialLoad1Extra.isValid(),
-				'st3 left-align',
+				'st3',
 				dynamicColourEssentialLoad1,
 				`${Utils.formatNumberLocale(
 					data.stateEssentialLoad1Extra.toNum(1),
