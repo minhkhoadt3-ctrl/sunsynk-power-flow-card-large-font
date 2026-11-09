@@ -390,7 +390,7 @@ export const renderInverterElements = (
 			${createTextWithPopup(
 				'ac_temp',
 				[4, 5, 6].includes(config.solar?.mppts) && !config.wide ? 110 : 134,
-				[4, 5, 6].includes(config.solar?.mppts) && !config.wide ? 237 : 153,
+				[4, 5, 6].includes(config.solar?.mppts) && !config.wide ? 215 : 132,
 				!!(
 					config.entities?.radiator_temp_91 && data.stateRadiatorTemp.isValid()
 				),
@@ -402,7 +402,7 @@ export const renderInverterElements = (
 			${createTextWithPopup(
 				'dc_temp',
 				110,
-				266,
+				242,
 				!!(
 					config.entities?.dc_transformer_temp_90 &&
 					data.stateDCTransformerTemp.isValid()
