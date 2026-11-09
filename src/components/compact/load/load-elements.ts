@@ -430,7 +430,7 @@ export const renderLoadElements = (
 					!!config.entities?.essential_load1_extra &&
 						additionalLoad >= 4 &&
 						data.stateEssentialLoad1Extra.isValid(),
-					'st3 right-align',
+					'st3',
 					dynamicColourEssentialLoad1,
 					`${Utils.formatNumberLocale(
 						data.stateEssentialLoad1Extra.toNum(1),
