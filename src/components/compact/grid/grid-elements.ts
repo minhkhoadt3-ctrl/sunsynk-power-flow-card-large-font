@@ -281,7 +281,7 @@ export const renderGridElements = (
 											),
 											`${!config.show_grid ? 'st12' : 'st3 left-align'}`,
 											gridColour,
-											`${Utils.formatNumberLocale(data.energyCost, 2)} ${data.stateEnergyCostBuy.getUOM()}`,
+											`${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostBuy.getUOM()}`,
 											(e) =>
 												Utils.handlePopup(e, config.entities.energy_cost_buy),
 										)}}`
@@ -296,7 +296,7 @@ export const renderGridElements = (
 											),
 											`${!config.show_grid ? 'st12' : 'st3 left-align'}`,
 											gridColour,
-											`${Utils.formatNumberLocale(data.energyCost, 2)} ${data.stateEnergyCostSell.getUOM()}`,
+											`${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostSell.getUOM()}`,
 											(e) =>
 												Utils.handlePopup(e, config.entities.energy_cost_sell),
 											false,
