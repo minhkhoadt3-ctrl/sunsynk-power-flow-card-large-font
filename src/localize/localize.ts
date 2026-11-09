@@ -16,6 +16,7 @@ import * as sk from './languages/sk.json';
 import * as sl from './languages/sl.json';
 import * as sv from './languages/sv.json';
 import * as uk from './languages/uk.json';
+import * as vi from './languages/vi.json';
 import { globalData } from '../helpers/globals';
 
 const languages: any = {
@@ -37,6 +38,7 @@ const languages: any = {
 	sl: sl,
 	sv: sv,
 	uk: uk,
+	vi: vi,
 };
 
 // Lightweight memoization for i18n lookups
