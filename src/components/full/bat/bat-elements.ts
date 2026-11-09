@@ -715,7 +715,7 @@ export const renderBatteryElements = (
 						isFloating2
 						? 'transparent'
 						: battery2Colour,
-					`${localize('common.runtime_to')} ${data.battery2Capacity}% @${data.formattedResultTime2}`,
+					`${localize('common.runtime_to')} ${data.battery2Capacity}% ${localize('common.at')} ${data.formattedResultTime2}`,
 				)}
 				${renderText(
 					'duration_text_charging',
