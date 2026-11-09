@@ -101,12 +101,12 @@ export const renderLoadElements = (
 				)}
 				${createTextWithPopup(
 					'ess_load1_extra',
-					448,
-					112,
+					441,
+					92,
 					!!config.entities?.essential_load1_extra &&
 						[1, 2, 3].includes(additionalLoad) &&
 						data.stateEssentialLoad1Extra.isValid(),
-					'st3 left-align',
+					'st3',
 					dynamicColourEssentialLoad1,
 					`${Utils.formatNumberLocale(
 						data.stateEssentialLoad1Extra.toNum(1),
@@ -161,12 +161,12 @@ export const renderLoadElements = (
 				)}
 				${createTextWithPopup(
 					'ess_load2_extra',
-					448,
-					350,
+					441,
+					348,
 					!!config.entities?.essential_load2_extra &&
 						additionalLoad === 2 &&
 						data.stateEssentialLoad2Extra.isValid(),
-					'st3 left-align',
+					'st3',
 					dynamicColourEssentialLoad2,
 					`${Utils.formatNumberLocale(
 						data.stateEssentialLoad2Extra.toNum(1),
@@ -249,12 +249,12 @@ export const renderLoadElements = (
 				</g>
 				${createTextWithPopup(
 					'ess_load2_extra',
-					438,
-					332,
+					422.5,
+					338,
 					!!config.entities?.essential_load2_extra &&
 						additionalLoad === 3 &&
 						data.stateEssentialLoad2Extra.isValid(),
-					'st3 right-align',
+					'st3',
 					dynamicColourEssentialLoad2,
 					`${Utils.formatNumberLocale(
 						data.stateEssentialLoad2Extra.toNum(1),
@@ -425,8 +425,8 @@ export const renderLoadElements = (
 				</g>
 				${createTextWithPopup(
 					'ess_load1_extra',
-					438,
-					125,
+					422.5,
+					120,
 					!!config.entities?.essential_load1_extra &&
 						additionalLoad >= 4 &&
 						data.stateEssentialLoad1Extra.isValid(),
@@ -440,12 +440,12 @@ export const renderLoadElements = (
 				)}
 				${createTextWithPopup(
 					'ess_load2_extra',
-					444,
-					175,
+					458.5,
+					155,
 					!!config.entities?.essential_load2_extra &&
 						additionalLoad >= 4 &&
 						data.stateEssentialLoad2Extra.isValid(),
-					'st3 left-align',
+					'st3',
 					dynamicColourEssentialLoad2,
 					`${Utils.formatNumberLocale(
 						data.stateEssentialLoad2Extra.toNum(1),
