@@ -70,7 +70,8 @@
     "sustain": "Sustain",
     "externalcontrol": "External Control",
     "recharge": "Recharge",
-    "scheduledrecharge": "Scheduled Recharge"
+    "scheduledrecharge": "Scheduled Recharge",
+    "at": "at"
   },
   "errors": {
     "battery": {
