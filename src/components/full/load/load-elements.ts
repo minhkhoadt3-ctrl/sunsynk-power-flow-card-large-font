@@ -825,8 +825,8 @@ export const renderLoadElements = (
 			)}
 			${createTextWithPopup(
 				'ess_load1_value_extra',
-				416,
-				27,
+				411,
+				8,
 				!!config.entities?.essential_load1_extra &&
 					additionalLoad === 1 &&
 					!showAux &&
@@ -857,13 +857,13 @@ export const renderLoadElements = (
 			)}
 			${createTextWithPopup(
 				'ess_load1_value_extra',
-				408,
+				411,
 				27,
 				!!config.entities?.essential_load1_extra &&
 					[2, 4, 5, 6].includes(additionalLoad) &&
 					!showAux &&
 					data.stateEssentialLoad1Extra.isValid(),
-				'st3 right-align',
+				'st3',
 				dynamicColourEssentialLoad1,
 				`${Utils.formatNumberLocale(
 					data.stateEssentialLoad1Extra.toNum(1),
@@ -874,12 +874,12 @@ export const renderLoadElements = (
 			${createTextWithPopup(
 				'ess_load2_value_extra',
 				414,
-				70,
+				77,
 				!!config.entities?.essential_load2_extra &&
 					[2, 4, 5, 6].includes(additionalLoad) &&
 					!showAux &&
 					data.stateEssentialLoad2Extra.isValid(),
-				'st3 left-align',
+				'st3',
 				dynamicColourEssentialLoad2,
 				`${Utils.formatNumberLocale(
 					data.stateEssentialLoad2Extra.toNum(1),
