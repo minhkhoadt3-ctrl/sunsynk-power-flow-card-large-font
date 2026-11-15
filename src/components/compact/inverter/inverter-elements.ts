@@ -373,17 +373,17 @@ export const renderInverterElements = (
 				(e) => Utils.handlePopup(e, config.entities.inverter_current_164),
 				true,
 			)}
-			<g text-anchor="middle">
+			<g>
 				${createTextWithPopup(
 					'ac_temp',
-					239,
+					270.2,
 					237,
 					!!(
 						config.entities?.radiator_temp_91 &&
 						data.stateRadiatorTemp.isValid()
 					),
-					'st14',
-					'#D00000',
+					'st3 st8 left-align',
+					inverterColour,
 					`AC: ${Utils.formatNumberLocale(data.stateRadiatorTemp.toNum(1), 1)}°`,
 					(e) => Utils.handlePopup(e, config.entities.radiator_temp_91),
 				false,
@@ -391,14 +391,14 @@ export const renderInverterElements = (
 			)}
 				${createTextWithPopup(
 					'dc_temp',
-					239,
+					270.2,
 					250,
 					!!(
 						config.entities?.dc_transformer_temp_90 &&
 						data.stateDCTransformerTemp.isValid()
 					),
-					'st14',
-					'#D00000',
+					'st3 st8 left-align',
+					inverterColour,
 					`DC: ${Utils.formatNumberLocale(data.stateDCTransformerTemp.toNum(1), 1)}°`,
 					(e) => Utils.handlePopup(e, config.entities.dc_transformer_temp_90),
 				false,
