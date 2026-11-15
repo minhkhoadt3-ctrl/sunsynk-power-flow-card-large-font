@@ -397,7 +397,7 @@ export const renderInverterElements = (
 						data.stateRadiatorTemp.isValid()
 					),
 					'st3',
-					inverterColour,
+					'#222222',
 					`AC: ${Utils.formatNumberLocale(data.stateRadiatorTemp.toNum(1), 1)}°`,
 					(e) => Utils.handlePopup(e, config.entities.radiator_temp_91),
 				)}
@@ -410,7 +410,7 @@ export const renderInverterElements = (
 						data.stateDCTransformerTemp.isValid()
 					),
 					'st3',
-					inverterColour,
+					'#222222',
 					`DC: ${Utils.formatNumberLocale(data.stateDCTransformerTemp.toNum(1), 1)}°`,
 					(e) => Utils.handlePopup(e, config.entities.dc_transformer_temp_90),
 				)}
