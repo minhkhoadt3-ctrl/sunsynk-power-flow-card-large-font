@@ -784,7 +784,7 @@ export const renderGridElements = (
 									data.stateEnergyCostBuy.isValid()
 								),
 								'st3 left-align',
-								gridColour,
+								'#222222',
 								`Tiền điện dự kiến: ${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostBuy?.getUOM()}`,
 							)}
                     </a>`
@@ -799,7 +799,7 @@ export const renderGridElements = (
 									data.stateEnergyCostSell.isValid()
 								),
 								'st3 left-align',
-								gridColour,
+								'#222222',
 								`Tiền điện dự kiến: ${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostSell?.getUOM()}`,
 							)}
                     </a>`}
