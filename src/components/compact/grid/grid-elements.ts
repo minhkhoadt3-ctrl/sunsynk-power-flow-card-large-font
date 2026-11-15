@@ -273,30 +273,30 @@ export const renderGridElements = (
 				? svg`
                     ${createTextWithPopup(
 											'energy_cost',
-											105,
-											195,
+											5,
+											180,
 											!!(
 												config.entities?.energy_cost_buy &&
 												data.stateEnergyCostBuy.isValid()
 											),
 											`${!config.show_grid ? 'st12' : 'st3 left-align'}`,
 											gridColour,
-											`${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostBuy.getUOM()}`,
+											`Tiền điện dự kiến: ${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostBuy.getUOM()}`,
 											(e) =>
 												Utils.handlePopup(e, config.entities.energy_cost_buy),
 										)}}`
 				: svg`
                     ${createTextWithPopup(
 											'energy_cost',
-											105,
-											195,
+											5,
+											180,
 											!!(
 												config.entities?.energy_cost_sell &&
 												data.stateEnergyCostSell.isValid()
 											),
 											`${!config.show_grid ? 'st12' : 'st3 left-align'}`,
 											gridColour,
-											`${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostSell.getUOM()}`,
+											`Tiền điện dự kiến: ${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostSell.getUOM()}`,
 											(e) =>
 												Utils.handlePopup(e, config.entities.energy_cost_sell),
 											false,
