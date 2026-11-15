@@ -280,7 +280,7 @@ export const renderGridElements = (
 												data.stateEnergyCostBuy.isValid()
 											),
 											`${!config.show_grid ? 'st12' : 'st3 left-align'}`,
-											gridColour,
+											'#222222',
 											`Tiền điện dự kiến: ${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostBuy.getUOM()}`,
 											(e) =>
 												Utils.handlePopup(e, config.entities.energy_cost_buy),
@@ -295,7 +295,7 @@ export const renderGridElements = (
 												data.stateEnergyCostSell.isValid()
 											),
 											`${!config.show_grid ? 'st12' : 'st3 left-align'}`,
-											gridColour,
+											'#222222',
 											`Tiền điện dự kiến: ${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostSell.getUOM()}`,
 											(e) =>
 												Utils.handlePopup(e, config.entities.energy_cost_sell),
