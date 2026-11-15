@@ -373,32 +373,34 @@ export const renderInverterElements = (
 				(e) => Utils.handlePopup(e, config.entities.inverter_current_164),
 				true,
 			)}
-			${createTextWithPopup(
-				'ac_temp',
-				173,
-				150,
-				!!(
-					config.entities?.radiator_temp_91 && data.stateRadiatorTemp.isValid()
-				),
-				'st3 left-align',
-				inverterColour,
-				`AC: ${Utils.formatNumberLocale(data.stateRadiatorTemp.toNum(1), 1)}°`,
-				(e) => Utils.handlePopup(e, config.entities.radiator_temp_91),
-			)}
-			${createTextWithPopup(
-				'dc_temp',
-				173,
-				164,
-				!!(
-					config.entities?.dc_transformer_temp_90 &&
-					data.stateDCTransformerTemp.isValid()
-				),
-				'st3 left-align',
-				inverterColour,
-				`DC: ${Utils.formatNumberLocale(data.stateDCTransformerTemp.toNum(1), 1)}°`,
-				(e) => Utils.handlePopup(e, config.entities.dc_transformer_temp_90),
-				false,
-			)}
+			<g text-anchor="middle">
+				${createTextWithPopup(
+					'ac_temp',
+					239,
+					210,
+					!!(
+						config.entities?.radiator_temp_91 &&
+						data.stateRadiatorTemp.isValid()
+					),
+					'st3',
+					inverterColour,
+					`AC: ${Utils.formatNumberLocale(data.stateRadiatorTemp.toNum(1), 1)}°`,
+					(e) => Utils.handlePopup(e, config.entities.radiator_temp_91),
+				)}
+				${createTextWithPopup(
+					'dc_temp',
+					239,
+					224,
+					!!(
+						config.entities?.dc_transformer_temp_90 &&
+						data.stateDCTransformerTemp.isValid()
+					),
+					'st3',
+					inverterColour,
+					`DC: ${Utils.formatNumberLocale(data.stateDCTransformerTemp.toNum(1), 1)}°`,
+					(e) => Utils.handlePopup(e, config.entities.dc_transformer_temp_90),
+				)}
+			</g>
 		</svg>
 	`;
 };
