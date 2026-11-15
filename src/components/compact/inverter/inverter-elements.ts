@@ -387,7 +387,6 @@ export const renderInverterElements = (
 					`AC: ${Utils.formatNumberLocale(data.stateRadiatorTemp.toNum(1), 1)}°C`,
 					(e) => Utils.handlePopup(e, config.entities.radiator_temp_91),
 				false,
-				700,
 			)}
 				${createTextWithPopup(
 					'dc_temp',
@@ -402,7 +401,6 @@ export const renderInverterElements = (
 					`DC: ${Utils.formatNumberLocale(data.stateDCTransformerTemp.toNum(1), 1)}°C`,
 					(e) => Utils.handlePopup(e, config.entities.dc_transformer_temp_90),
 				false,
-				700,
 			)}
 			</g>
 		</svg>
