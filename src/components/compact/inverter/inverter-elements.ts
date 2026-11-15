@@ -374,6 +374,8 @@ export const renderInverterElements = (
 				true,
 			)}
 			<g text-anchor="middle">
+				<rect x="213" y="201" width="52" height="12" rx="2" fill="#111111" fill-opacity="0.88" pointer-events="none" />
+				<rect x="213" y="215" width="52" height="12" rx="2" fill="#111111" fill-opacity="0.88" pointer-events="none" />
 				${createTextWithPopup(
 					'ac_temp',
 					239,
@@ -383,7 +385,7 @@ export const renderInverterElements = (
 						data.stateRadiatorTemp.isValid()
 					),
 					'st3',
-					'#222222',
+					'#FFFFFF',
 					`AC: ${Utils.formatNumberLocale(data.stateRadiatorTemp.toNum(1), 1)}°`,
 					(e) => Utils.handlePopup(e, config.entities.radiator_temp_91),
 				)}
@@ -396,7 +398,7 @@ export const renderInverterElements = (
 						data.stateDCTransformerTemp.isValid()
 					),
 					'st3',
-					'#222222',
+					'#FFFFFF',
 					`DC: ${Utils.formatNumberLocale(data.stateDCTransformerTemp.toNum(1), 1)}°`,
 					(e) => Utils.handlePopup(e, config.entities.dc_transformer_temp_90),
 				)}
