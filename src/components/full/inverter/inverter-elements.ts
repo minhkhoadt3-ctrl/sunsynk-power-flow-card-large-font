@@ -391,7 +391,7 @@ export const renderInverterElements = (
 				${createTextWithPopup(
 					'ac_temp',
 					270,
-					${largeFont !== true ? 300 : 303},
+					largeFont !== true ? 300 : 303,
 					!!(
 						config.entities?.radiator_temp_91 &&
 						data.stateRadiatorTemp.isValid()
@@ -405,7 +405,7 @@ export const renderInverterElements = (
 				${createTextWithPopup(
 					'dc_temp',
 					270,
-					${largeFont !== true ? 315 : 318},
+					largeFont !== true ? 315 : 318,
 					!!(
 						config.entities?.dc_transformer_temp_90 &&
 						data.stateDCTransformerTemp.isValid()
