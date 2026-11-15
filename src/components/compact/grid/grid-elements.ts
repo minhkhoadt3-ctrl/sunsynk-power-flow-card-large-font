@@ -279,8 +279,8 @@ export const renderGridElements = (
 												config.entities?.energy_cost_buy &&
 												data.stateEnergyCostBuy.isValid()
 											),
-											'st3 left-align',
-											'#222222',
+											'st3 st8 left-align',
+											gridColour,
 											`Tiền điện dự kiến: ${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostBuy.getUOM()}`,
 											(e) =>
 												Utils.handlePopup(e, config.entities.energy_cost_buy),
@@ -294,8 +294,8 @@ export const renderGridElements = (
 												config.entities?.energy_cost_sell &&
 												data.stateEnergyCostSell.isValid()
 											),
-											'st3 left-align',
-											'#222222',
+											'st3 st8 left-align',
+											gridColour,
 											`Tiền điện dự kiến: ${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostSell.getUOM()}`,
 											(e) =>
 												Utils.handlePopup(e, config.entities.energy_cost_sell),
