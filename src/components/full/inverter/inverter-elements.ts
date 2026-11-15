@@ -396,7 +396,7 @@ export const renderInverterElements = (
 						config.entities?.radiator_temp_91 &&
 						data.stateRadiatorTemp.isValid()
 					),
-					'st3',
+					'st14',
 					'#D00000',
 					`AC: ${Utils.formatNumberLocale(data.stateRadiatorTemp.toNum(1), 1)}°`,
 					(e) => Utils.handlePopup(e, config.entities.radiator_temp_91),
@@ -411,7 +411,7 @@ export const renderInverterElements = (
 						config.entities?.dc_transformer_temp_90 &&
 						data.stateDCTransformerTemp.isValid()
 					),
-					'st3',
+					'st14',
 					'#D00000',
 					`DC: ${Utils.formatNumberLocale(data.stateDCTransformerTemp.toNum(1), 1)}°`,
 					(e) => Utils.handlePopup(e, config.entities.dc_transformer_temp_90),
