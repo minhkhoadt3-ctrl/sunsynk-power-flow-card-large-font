@@ -776,86 +776,32 @@ export const renderGridElements = (
 				? svg`
                     <a href="#" @click=${(e) => Utils.handlePopup(e, config.entities.energy_cost_buy)}>
                         ${renderText(
-													'energy_cost',
-													414,
-													305,
-													!!(
-														config.entities?.energy_cost_buy &&
-														data.stateEnergyCostBuy.isValid() &&
-														!config.entities.non_essential_load2_extra
-													),
-													'st3 right-align',
-													gridColour,
-													`${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostBuy?.getUOM()}`,
-												)}
-                        ${renderText(
-													'energy_cost',
-													three_phase ? 414 : 430,
-													305,
-													!!(
-														config.entities?.energy_cost_buy &&
-														data.stateEnergyCostBuy.isValid() &&
-														config.entities.non_essential_load2_extra
-													),
-													three_phase ? 'st3 right-align' : 'st3 left-align',
-													gridColour,
-													`${Utils.formatNumberLocale(data.energyCost, 0)}`,
-												)}
-                        ${renderText(
-													'energy_cost',
-													three_phase ? 414 : 437,
-													318,
-													!!(
-														config.entities?.energy_cost_buy &&
-														data.stateEnergyCostBuy.isValid() &&
-														config.entities.non_essential_load2_extra
-													),
-													three_phase ? 'st3 right-align' : 'st3 left-align',
-													gridColour,
-													`${data.stateEnergyCostBuy?.getUOM()}`,
-												)}
+								'energy_cost',
+								!showNonessential ? 311 : 347,
+								three_phase ? 326 : 295,
+								!!(
+									config.entities?.energy_cost_buy &&
+									data.stateEnergyCostBuy.isValid()
+								),
+								'st3 left-align',
+								gridColour,
+								`Tiền điện dự kiến: ${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostBuy?.getUOM()}`,
+							)}
                     </a>`
 				: svg`
                     <a href="#" @click=${(e) => Utils.handlePopup(e, config.entities.energy_cost_sell)}>
                         ${renderText(
-													'energy_cost',
-													414,
-													305,
-													!!(
-														config.entities?.energy_cost_sell &&
-														data.stateEnergyCostSell.isValid() &&
-														!config.entities.non_essential_load2_extra
-													),
-													'st3 right-align',
-													gridColour,
-													`${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostSell?.getUOM()}`,
-												)}
-                        ${renderText(
-													'energy_cost',
-													three_phase ? 414 : 430,
-													305,
-													!!(
-														config.entities?.energy_cost_sell &&
-														data.stateEnergyCostSell.isValid() &&
-														config.entities.non_essential_load2_extra
-													),
-													three_phase ? 'st3 right-align' : 'st3 left-align',
-													gridColour,
-													`${Utils.formatNumberLocale(data.energyCost, 0)}`,
-												)}
-                        ${renderText(
-													'energy_cost',
-													three_phase ? 414 : 437,
-													318,
-													!!(
-														config.entities?.energy_cost_sell &&
-														data.stateEnergyCostSell.isValid() &&
-														config.entities.non_essential_load2_extra
-													),
-													three_phase ? 'st3 right-align' : 'st3 left-align',
-													gridColour,
-													`${data.stateEnergyCostSell?.getUOM()}`,
-												)}
+								'energy_cost',
+								!showNonessential ? 311 : 347,
+								three_phase ? 326 : 295,
+								!!(
+									config.entities?.energy_cost_sell &&
+									data.stateEnergyCostSell.isValid()
+								),
+								'st3 left-align',
+								gridColour,
+								`Tiền điện dự kiến: ${Utils.formatNumberLocale(data.energyCost, 0)} ${data.stateEnergyCostSell?.getUOM()}`,
+							)}
                     </a>`}
 			${createTextWithPopup(
 				'grid_power_169',
